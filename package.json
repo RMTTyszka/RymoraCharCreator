@@ -1,14 +1,14 @@
 {
-  "name": "electron-quick-start",
+  "name": "RymoraCharCreator",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "The char crator for Rymora Land of Heroes",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron/electron-quick-start.git"
+    "url": "git+https://github.com/ArmlessJohn404/RymoraCharCreator.git"
   },
   "keywords": [
     "Electron",
@@ -16,12 +16,12 @@
     "start",
     "tutorial"
   ],
-  "author": "GitHub",
+  "author": "Luiz Eduardo Amaral",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/electron/electron-quick-start/issues"
+    "url": "https://github.com/ArmlessJohn404/RymoraCharCreator/issues"
   },
-  "homepage": "https://github.com/electron/electron-quick-start#readme",
+  "homepage": "https://github.com/ArmlessJohn404/RymoraCharCreator#readme",
   "devDependencies": {
     "electron-prebuilt": "^0.37.8"
   }

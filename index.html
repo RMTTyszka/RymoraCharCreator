@@ -3,13 +3,64 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <link rel="stylesheet" type="text/css" href="custom_bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <div class="fluid-container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Rymora Char Creator</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">
+          <button>Gosma</button>
+        </div>
+        <div class="col-xs-4">
+          <button>Paulo</button>
+        </div>
+        <div class="col-xs-4">
+          <button>Enxofre</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Attributes</h2>
+          <table class="table-striped table-hover">
+            <tr>
+              <th>Attribute</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td>Strength:</td>
+              <td><input id="str-input"/></td>
+            </tr>
+            <tr>
+              <td>Dexterity:</td>
+              <td><input id="dex-input"/></td>
+            </tr>
+            <tr>
+              <td>Vitality:</td>
+              <td><input id="vit-input"/></td>
+            </tr>
+            <tr>
+              <td>Intelligence:</td>
+              <td><input id="int-input"/></td>
+            </tr>
+            <tr>
+              <td>Wisdom:</td>
+              <td><input id="wis-input"/></td>
+            </tr>
+            <tr>
+              <td>Charisma:</td>
+              <td><input id="cha-input"/></td>
+            </tr>
+          </table>
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 
   <script>
