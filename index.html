@@ -5,23 +5,54 @@
     <title>Hello World!</title>
     <link rel="stylesheet" type="text/css" href="custom_bootstrap.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script>window.$ = window.jQuery = require(__dirname+'/../jquery-1.12.4.js')</script>
   </head>
   <body>
     <div class="fluid-container">
       <div class="row">
-        <div class="col-md-12">
-          <h1>Rymora Char Creator</h1>
+        <div class="col-md-12 center">
+          <h1 id="coco">Rymora Char Creator</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-4">
-          <button>Gosma</button>
+        <div class="col-md-4">
+          <h3>Monsters</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <button class="btn">Monster</button>
+            </div>
+            <div class="col-md-4">
+              <button class="btn">Role</button>
+            </div>
+            <div class="col-md-4">
+              <button class="btn">Race</button>
+            </div>
+          </div>
         </div>
-        <div class="col-xs-4">
-          <button>Paulo</button>
+        <div class="col-md-4">
+          <h3>Item</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <button>Consumable</button>
+            </div>
+            <div class="col-md-6">
+              <button>Equipable</button>
+            </div>
+          </div>
         </div>
-        <div class="col-xs-4">
-          <button>Enxofre</button>
+        <div class="col-md-4">
+          <h3>Power</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <button>Power</button>
+            </div>
+            <div class="col-md-4">
+              <button>Spell</button>
+            </div>
+            <div class="col-md-4">
+              <button>Passive</button>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -59,12 +90,23 @@
           </table>
           </p>
         </div>
+        <div class="col-md-6">
+          <h3>Skills</h3>
+          <table class="table-stripéd table-hover">
+            <tr>
+              <td><select>
+                <option value = ""
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </body>
 
   <script>
     // You can also require other files to run in this process
-    require('./renderer.js')
+
+    require('./renderer.js');
   </script>
 </html>
