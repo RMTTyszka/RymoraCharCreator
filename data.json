@@ -1,0 +1,11 @@
+{
+    "skills": [
+  "alchemy", "anatomy", "animaltaming", "archery", "armorcrafting", "armslore",
+  "awareness", "bowcrafting", "carpentery", "fencing", "gathering", "healing",
+  "heavyweaponship", "jewelcrafting", "leatherworking", "lore", "lumberjacking",
+  "magery", "meditating", "mercantilism", "military", "mining", "parry", "reflex", "resistspells",
+  "skinning", "stealth", "swordmanship", "tactics", "tailoring", "wrestling"],
+
+  "attributes": [
+      "strength","agility","vitality","wisdown","intuition","charisma"]
+}
