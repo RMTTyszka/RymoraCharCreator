@@ -33,10 +33,10 @@
           <h3>Item</h3>
           <div class="row">
             <div class="col-md-6">
-              <button>Consumable</button>
+              <button class="btn">Consumable</button>
             </div>
             <div class="col-md-6">
-              <button>Equipable</button>
+              <button class="btn">Equipable</button>
             </div>
           </div>
         </div>
@@ -44,61 +44,62 @@
           <h3>Power</h3>
           <div class="row">
             <div class="col-md-4">
-              <button>Power</button>
+              <button class= "btn">Power</button>
             </div>
             <div class="col-md-4">
-              <button>Spell</button>
+              <button class="btn">Spell</button>
             </div>
             <div class="col-md-4">
-              <button>Passive</button>
+              <button class="btn">Passive</button>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
-          <h2>Attributes</h2>
+          <div class = "col-md-12">
           <table class="table-striped table-hover">
+              <tr>
+                  <th>Name</th>
+                  <th>Race</th>
+                  <th>Role</th>
+              <tr>
+                  <td><input id="nameInput"></td>
+                  <td><input id="raceInput"></td>
+                  <td><input id="roleInput"></td>
+          </table>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Attributes</h2>
+          <table class="table-striped table-hover" id="attributesTable">
             <tr>
               <th>Attribute</th>
               <th>Value</th>
             </tr>
-            <tr>
-              <td>Strength:</td>
-              <td><input id="str-input"/></td>
-            </tr>
-            <tr>
-              <td>Dexterity:</td>
-              <td><input id="dex-input"/></td>
-            </tr>
-            <tr>
-              <td>Vitality:</td>
-              <td><input id="vit-input"/></td>
-            </tr>
-            <tr>
-              <td>Intelligence:</td>
-              <td><input id="int-input"/></td>
-            </tr>
-            <tr>
-              <td>Wisdom:</td>
-              <td><input id="wis-input"/></td>
-            </tr>
-            <tr>
-              <td>Charisma:</td>
-              <td><input id="cha-input"/></td>
-            </tr>
           </table>
           </p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <h3>Skills</h3>
-          <table class="table-stripéd table-hover">
-            <tr>
-              <td><select>
-                <option value = ""
-              </td>
-            </tr>
+          <table class="table-striped table-hover" id ="skillTable">
+              <tr>
+                  <th>Skills</th>
+                  <th>Value</th>
+              </tr>
           </table>
+        </div>
+      </div>
+      <div class = "row">
+        <div class="col-md-3">
+          <h2>Drop</h2>
+          <table class = "table-striped table-hover"id="inventory">
+          </table>
+        </div>
+        <div class="col-md-2 ">
+            <button class="btn btn-lg" id="saveButton">Save</button>
+            <button class="btn btn-lg" id="eraseButton">Erase</button>
+            <button class="btn btn-lg" id="luckyButton">I'm Feeling Lucky</button>
         </div>
       </div>
     </div>
@@ -106,7 +107,6 @@
 
   <script>
     // You can also require other files to run in this process
-
     require('./renderer.js');
   </script>
 </html>
