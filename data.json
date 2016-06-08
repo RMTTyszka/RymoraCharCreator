@@ -7,5 +7,5 @@
   "skinning", "stealth", "swordmanship", "tactics", "tailoring", "wrestling"],
 
   "attributes": [
-      "strength","agility","vitality","wisdown","intuition","charisma"]
+      "strength","agility","vitality","wisdom","intuition","charisma"]
 }

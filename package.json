@@ -24,5 +24,8 @@
   "homepage": "https://github.com/ArmlessJohn404/RymoraCharCreator#readme",
   "devDependencies": {
     "electron-prebuilt": "^0.37.8"
+  },
+  "dependencies": {
+    "jsonfile": "^2.3.1"
   }
 }

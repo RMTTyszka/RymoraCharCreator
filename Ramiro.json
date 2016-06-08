@@ -1,0 +1,20 @@
+{
+	"attributes": {
+		"strength": "99",
+		"agility": "99",
+		"vitality": "99",
+		"wisdom": "99",
+		"intuition": "99",
+		"charisma": "99"
+	},
+	"skills": {
+		"animaltaming": "100",
+		"skinning": "999",
+		"magery": "250"
+	},
+	"drop": [
+		"Penis de Borracha",
+		"Dado do mestre",
+		"orelha de lux"
+	]
+}

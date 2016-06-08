@@ -5,36 +5,53 @@
 // Skill Tab
 for (var i = 1; i < 11; i++) {
     $("#skillTable").append(
-        '<tr><td><select class = "skillselector" id="skSelect"'+i+'><option value = "">'+i+'</option></select><td><input id="skValue'+ i+'Input"/></td></tr>')
+        '<tr><td><select class = "skillSelector" id="sk'+i+'"><option value = "" selected="selected">'+""+'</option></select><td><input id="skv'+ i+'"></td></tr>')
 };
 $.getJSON(__dirname+'/data.json', function (data) {
             $.each(data.skills, function(i, v) {
-                $('.skillselector').append('<option value="' + v + '">' + v + '</option>');
+                $('.skillSelector').append('<option value="' + v + '">' + v + '</option>');
             });
         });
 // Investory Tab
 for (var k = 1; k < 11; k++ ) {
   $("#inventory").append(
-    '<tr><td><input id="item '+k+'"></td></tr>'
+    '<tr><td><input class="item" id="item '+k+'"></td></tr>'
 );
 };
-// Atttributes Tab
+// Attributes Tab
 $.getJSON(__dirname+'/data.json', function (data) {
     $.each(data.attributes, function(i,v) {
         $("#attributesTable").append(
-            '<tr><td>'+v+'</td><td><input class="attrInput" id="'+v+'Input"></td></tr>'
+            '<tr><td>'+v+'</td><td><input type="text" class="attrInput" id="'+v+'"></td></tr>'
         );
     });
 });
 
 $(".btn").css("color","green");
-$(document).ready( function() {
+$("#saveButton").on("click", function () {
+    var jsonDict = {
+      "attributes": {},
+      "skills": {},
+      "drop": []
+    };
+    var file = __dirname+'/'+$("#nameInput").val()+'.json';
+    var jsonfile = require('jsonfile');
+    fs = require('fs');
+    $(".attrInput").each(function () {
+        jsonDict.attributes[this.id] = $(this).val();
 
-$.each($(".attrInput"), function () {
-  console.log('1');
-});
-console.log($(".attrInput"))
-$(".attrInput").each(function(i) {
-  console.log($(this)[0].id);
-});
-});
+    });
+    $(".skillSelector").each(function () {
+      if ($(this).val().length > 0) {
+        jsonDict.skills[$(this).val()] = $("#skv"+this.id[2]).val();
+      }
+    });
+    $(".item").each(function () {
+      if ($(this).val().length > 0) {
+        jsonDict.drop.push($(this).val())};
+    })
+    console.log(JSON.stringify(jsonDict))
+    fs.writeFile(file, JSON.stringify(jsonDict, null, "\t"), function (err) {
+      console.log(err)
+    });
+})
