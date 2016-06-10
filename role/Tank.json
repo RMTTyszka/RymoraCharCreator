@@ -1,0 +1,12 @@
+{
+	"attributes": {
+		"strength": "10",
+		"agility": "0",
+		"vitality": "10",
+		"wisdom": "0",
+		"intuition": "0",
+		"charisma": ""
+	},
+	"skills": {},
+	"inventory": []
+}

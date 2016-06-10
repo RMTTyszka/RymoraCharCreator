@@ -1,0 +1,14 @@
+{
+	"attributes": {
+		"strength": "",
+		"agility": "",
+		"vitality": "",
+		"wisdom": "",
+		"intuition": "",
+		"charisma": ""
+	},
+	"skills": {
+		"alchemy": "12"
+	},
+	"drop": []
+}

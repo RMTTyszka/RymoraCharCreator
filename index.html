@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="custom_bootstrap.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script>window.$ = window.jQuery = require(__dirname+'/jquery-1.12.4.js')</script>
+    <link rel="import" id="charImport" href="./char.html">
   </head>
   <body>
     <div class="fluid-container">
@@ -16,16 +17,16 @@
       </div>
       <div class="row">
         <div class="col-md-4">
-          <h3>Monsters</h3>
+          <h3>Chars</h3>
           <div class="row">
             <div class="col-md-4">
-              <button class="btn">Monster</button>
+              <button class="btn" id="charSwapper">Char</button>
             </div>
             <div class="col-md-4">
-              <button class="btn">Role</button>
+              <button class="btn" id="roleSwapper">Role</button>
             </div>
             <div class="col-md-4">
-              <button class="btn">Race</button>
+              <button class="btn" id="raceSwapper">Race</button>
             </div>
           </div>
         </div>
@@ -55,58 +56,22 @@
           </div>
         </div>
       </div>
-      <div class="row">
-          <div class = "col-md-12">
-            <table class="table-striped table-hover">
-                <tr>
-                    <th>Name</th>
-                    <th>Race</th>
-                    <th>Role</th>
-                <tr>
-                    <td><input id="nameInput" value="Ramiro"></td>
-                    <td><input id="raceInput"></td>
-                    <td><input id="roleInput"></td>
-            </table>
+      <div class="fluid-container" id="swapped">
+        
+      </div>
+        <div class = "row">
+          <div class="col-md-6 col-md-offset-4">
+              <button class="btn btn-lg" id="saveButton">Save</button>
+              <button class="btn btn-lg" id="eraseButton">Erase</button>
+              <button class="btn btn-lg" id="luckyButton">I'm Feeling Lucky</button>
           </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Attributes</h2>
-          <table class="table-striped table-hover" id="attributesTable">
-            <tr>
-              <th>Attribute</th>
-              <th>Value</th>
-            </tr>
-          </table>
-          </p>
         </div>
-        <div class="col-md-4">
-          <h3>Skills</h3>
-          <table class="table-striped table-hover" id ="skillTable">
-              <tr>
-                  <th>Skills</th>
-                  <th>Value</th>
-              </tr>
-          </table>
-        </div>
-      </div>
-      <div class = "row">
-        <div class="col-md-3">
-          <h2>Drop</h2>
-          <table class = "table-striped table-hover"id="inventory">
-          </table>
-        </div>
-        <div class="col-md-2 ">
-            <button class="btn btn-lg" id="saveButton">Save</button>
-            <button class="btn btn-lg" id="eraseButton">Erase</button>
-            <button class="btn btn-lg" id="luckyButton">I'm Feeling Lucky</button>
-        </div>
-      </div>
     </div>
   </body>
 
   <script>
     // You can also require other files to run in this process
     require('./renderer.js');
+
   </script>
 </html>

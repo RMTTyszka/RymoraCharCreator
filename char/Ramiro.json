@@ -1,0 +1,22 @@
+{
+	"attributes": {
+		"strength": "99",
+		"agility": "200",
+		"vitality": "150",
+		"wisdom": "456",
+		"intuition": "489",
+		"charisma": "333"
+	},
+	"skills": {
+		"magery": "99",
+		"anatomy": "150",
+		"tactics": "999"
+	},
+	"inventory": [
+		"Penis de Manticora",
+		"Orelha de Lux",
+		"Espada da Rapunzéu"
+	],
+	"role": "Devastator",
+	"race": "God"
+}
